@@ -4,7 +4,7 @@
   <p>
     <img alt="Workflow badge" src="https://img.shields.io/badge/Workflow-Customer%20Support%20Drafting-0f766e?style=for-the-badge">
     <img alt="Model badge" src="https://img.shields.io/badge/Model-GitHub%20Models%20%7C%20GPT--4.1--mini-1d4ed8?style=for-the-badge">
-    <img alt="Status badge" src="https://img.shields.io/badge/Status-In%20Progress-f59e0b?style=for-the-badge">
+    <img alt="Status badge" src="https://img.shields.io/badge/Status-Awaiting%20Video%20Link-f59e0b?style=for-the-badge">
   </p>
 </div>
 
@@ -31,11 +31,23 @@ Genai_Homework2/
 |- prompts.md
 |- eval_set.json
 |- report.md
+|- artifacts/
 ```
 
 ## Reproducibility Notes
 
 This prototype runs from the command line and makes real LLM API calls through GitHub Models. It uses `gh auth token` if GitHub CLI is already logged in, or it can use a `GITHUB_TOKEN` environment variable instead.
+
+## Evaluation Artifacts
+
+The repository includes saved evaluation artifacts so the comparison can be inspected without rerunning every prompt version:
+
+- `artifacts/eval_v0.md`
+- `artifacts/eval_v1.md`
+- `artifacts/eval_v2.md`
+- `artifacts/liability_claim_nano_check.md`
+
+The best-performing prompt version in this repo is `v2`, which is also the default in `app.py`.
 
 ## How To Run
 
