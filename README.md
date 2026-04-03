@@ -62,4 +62,4 @@ python3 app.py --run-eval --prompt-version v2
 
 Add your unlisted YouTube or Vimeo link here before submission:
 
-`VIDEO_LINK_PLACEHOLDER`
+`https://youtu.be/ZR6npU919CE`
